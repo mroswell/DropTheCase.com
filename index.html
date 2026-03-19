@@ -461,6 +461,28 @@
             color: var(--navy);
             border-color: var(--accent);
         }
+        .read-opinion {
+            display: inline-flex; align-items: center; gap: 0.7rem;
+            margin-top: 2.5rem;
+            padding: 1rem 1.8rem;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(201,168,76,0.4);
+            border-radius: 6px;
+            color: var(--accent);
+            text-decoration: none;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.25s;
+        }
+        .read-opinion:hover {
+            background: var(--accent);
+            color: var(--navy);
+            border-color: var(--accent);
+        }
+        .read-opinion svg { flex-shrink: 0; }
         .social-links.centered { justify-content: center; }
         .social-links.large a { width: 48px; height: 48px; font-size: 1.3rem; }
         .nav-social { margin-left: 0.5rem; display: none; }
@@ -539,7 +561,7 @@
 <!-- HERO -->
 <section class="hero">
     <div class="hero-content">
-        <div class="hero-badge">Federal Judge Overturns Verdict</div>
+        <div class="hero-badge">Drop the Case against Dr. Elfenbein</div>
         <h1>A Doctor Tested Thousands for COVID.<br><em>The Government Called It Fraud.</em></h1>
         <p>Dr. Ron Elfenbein ran an urgent care center that pivoted to mass COVID-19 testing when the pandemic hit Maryland. The federal government charged him with healthcare fraud. A federal judge reviewed the evidence, found the conviction unsupported, and ordered him acquitted.</p>
         <a href="#story" class="hero-cta">Read the Full Story</a>
@@ -656,6 +678,11 @@
             <blockquote>"The Government sails in shallow waters when it prosecutes a case of this type; these cases require careful navigation."</blockquote>
             <cite>Court's Conclusion</cite>
         </div>
+
+        <a href="https://www2.mdd.uscourts.gov/Opinions/Opinions/22-0146%20Elfenbein%20Opinion.pdf" class="read-opinion" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm4 18H6V4h7v5h5v11z"/><path d="M7.5 17.2h1v-2h.7c.9 0 1.5-.6 1.5-1.4 0-.8-.6-1.3-1.5-1.3h-1.7v4.7zm1-3.7h.6c.4 0 .6.2.6.5s-.2.5-.6.5h-.6v-1zm3.3 3.7h1.5c1.2 0 2-.8 2-2.4 0-1.5-.8-2.3-2-2.3h-1.5v4.7zm1-3.7h.4c.7 0 1.1.4 1.1 1.4 0 .9-.4 1.4-1.1 1.4h-.4v-2.8zm3.7 3.7h1v-1.8h1.2v-.9h-1.2v-1.1h1.3v-.9h-2.3v4.7z"/></svg>
+            Read the Full Court Opinion
+        </a>
     </div>
 </section>
 
@@ -762,7 +789,7 @@
         <h2>Support <strong>Dr. Elfenbein</strong></h2>
         <p>Even after acquittal, the legal battle has taken an enormous toll. Years of prosecution, a criminal trial, and the weight of fighting the federal government require resources. Your support helps with ongoing legal defense and raising awareness about the criminalization of ambiguous billing rules.</p>
         <div class="support-buttons">
-            <a href="https://www.givesendgo.com/DefendDrElfenbein" class="btn-primary" target="_blank" rel="noopener">Donate Now</a>
+            <a href="https://givesendgo.com/DefendDrElfenbein" class="btn-primary" target="_blank" rel="noopener">Donate Now</a>
             <a href="#" class="btn-secondary" onclick="alert('Contact form coming soon. Please check back.'); return false;">Get in Touch</a>
         </div>
         <div style="margin-top: 2rem;">
