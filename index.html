@@ -451,6 +451,71 @@
             text-transform: uppercase;
         }
 
+        /* LETTERS OF SUPPORT */
+        .letters {
+            background: var(--off-white);
+        }
+
+        .letters-intro {
+            max-width: 700px;
+            margin-bottom: 2.5rem;
+        }
+
+        .letters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .letter-card {
+            display: flex;
+            flex-direction: column;
+            background: var(--white);
+            padding: 1.8rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .letter-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .letter-card h3 {
+            color: var(--navy);
+            font-size: 1.1rem;
+            line-height: 1.35;
+            margin-bottom: 0.7rem;
+        }
+
+        .letter-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .letter-meta {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.72rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-light);
+            margin-bottom: 0.9rem;
+        }
+
+        .letter-link {
+            margin-top: auto;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: var(--accent);
+        }
+
         /* TIMELINE */
         .timeline-section {
             background: var(--off-white);
@@ -833,6 +898,7 @@
             <a href="#case">The Case</a>
             <a href="#why-drop">The Ruling</a>
             <a href="#quotes">Quotes</a>
+            <a href="#letters">Letters of Support</a>
             <a href="#timeline">Timeline</a>
             <a href="#faq">FAQ</a>
             <div class="social-links nav-social" style="gap: 0.4rem;">
@@ -1053,6 +1119,67 @@
                 </svg>
                 Read the Full Court Opinion
             </a>
+        </div>
+    </section>
+
+    <!-- LETTERS OF SUPPORT -->
+    <section class="letters" id="letters">
+        <div class="container">
+            <div class="section-label">Letters of Support</div>
+            <h2>Physicians and Leaders <strong>Speak Out</strong></h2>
+            <p class="letters-intro">Leading medical organizations, legal advocates, and public
+                figures have urged the Department of Justice to end this prosecution. Read their
+                letters and briefs below.</p>
+            <div class="letters-grid">
+                <a class="letter-card" href="letters/ama-mdstate-amici-brief.pdf" target="_blank"
+                    rel="noopener">
+                    <h3>American Medical Association &amp; Maryland State Medical Society</h3>
+                    <p>Amici curiae brief filed in the U.S. Court of Appeals for the Fourth Circuit
+                        in support of Dr. Elfenbein.</p>
+                    <span class="letter-meta">Oct 7, 2024 · PDF</span>
+                    <span class="letter-link">Read the brief →</span>
+                </a>
+                <a class="letter-card" href="letters/medchi-letter-to-ag-blanche.pdf" target="_blank"
+                    rel="noopener">
+                    <h3>MedChi, The Maryland State Medical Society</h3>
+                    <p>Letter to Acting Attorney General Todd Blanche transmitting its amicus brief
+                        and urging a just resolution.</p>
+                    <span class="letter-meta">Jul 17, 2026 · PDF</span>
+                    <span class="letter-link">Read the letter →</span>
+                </a>
+                <a class="letter-card" href="letters/ima-open-letter.pdf" target="_blank"
+                    rel="noopener">
+                    <h3>Independent Medical Alliance</h3>
+                    <p>Open letter to Acting Attorney General Blanche urging prosecutorial restraint
+                        and dismissal of the case.</p>
+                    <span class="letter-meta">Jun 19, 2026 · PDF</span>
+                    <span class="letter-link">Read the letter →</span>
+                </a>
+                <a class="letter-card" href="letters/aaps-open-letter.pdf" target="_blank"
+                    rel="noopener">
+                    <h3>Association of American Physicians and Surgeons</h3>
+                    <p>Open letter to the Attorney General urging no second prosecution on Double
+                        Jeopardy grounds.</p>
+                    <span class="letter-meta">Jul 17, 2026 · PDF</span>
+                    <span class="letter-link">Read the letter →</span>
+                </a>
+                <a class="letter-card" href="letters/ehrlich-letter.pdf" target="_blank"
+                    rel="noopener">
+                    <h3>Gov. Robert L. Ehrlich, Jr.</h3>
+                    <p>Personal character letter in support of Dr. Elfenbein from the former Governor
+                        of Maryland.</p>
+                    <span class="letter-meta">Sep 8, 2025 · PDF</span>
+                    <span class="letter-link">Read the letter →</span>
+                </a>
+                <a class="letter-card" href="letters/afpi-malicious-prosecution-letter.pdf"
+                    target="_blank" rel="noopener">
+                    <h3>America First Policy Institute</h3>
+                    <p>Letter to the Department of Justice on the malicious prosecution of
+                        Dr. Elfenbein.</p>
+                    <span class="letter-meta">PDF</span>
+                    <span class="letter-link">Read the letter →</span>
+                </a>
+            </div>
         </div>
     </section>
 
